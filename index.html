@@ -20,6 +20,11 @@
 .life-guide { margin-top: 14px; }
 .life-guide .skill-card h4 em { margin-left: auto; font-style: normal; font-size: 9.5px; font-weight: 700; letter-spacing: .05em; padding: 1px 7px; border-radius: 99px; background: var(--aqua-3); color: var(--aqua-ink); }
 .life-guide .tip { margin: 0; font-size: 11.5px; color: var(--ink-dim); }
+
+/* ---------- scholarships ---------- */
+.scholarships { margin-top: 14px; }
+.scholar-table { min-width: 560px; }
+.scholar-table td:first-child { white-space: nowrap; }
 </style>
 </head>
 <body>
@@ -1063,8 +1068,8 @@ button.ft-node:hover { background: rgba(255,255,255,.26); }
           <div class="skill-guide-grid">
             <article class="skill-card" style="--k:var(--k-cooking)"><h4><i></i>Cooking</h4><p>Better meals that fill Hunger more, fewer burned dishes and far fewer kitchen fires. New recipes unlock as the skill rises.</p><p class="maxed"><b>Maxed (10/10):</b> Top-quality meals with almost no fire risk, and the skill the Culinary career leans on all the way to Celebrity Chef.</p></article>
             <article class="skill-card" style="--k:var(--k-mechanical)"><h4><i></i>Mechanical</h4><p>Repairs broken appliances, plumbing and electronics faster, and lowers the odds of getting shocked while fixing them.</p><p class="maxed"><b>Maxed (10/10):</b> Quick repairs that make the repairman unnecessary, and a head start on the Robotics and Toy Making badges (Open for Business). Needed by 13 careers, from Military to Medicine.</p></article>
-            <article class="skill-card" style="--k:var(--k-charisma)"><h4><i></i>Charisma</h4><p>Makes social interactions like jokes land more often and cuts the chance of being rejected.</p><p class="maxed"><b>Maxed (10/10):</b> Smoother socializing and the top of social careers like Politics, Business and Show Business. With University, a high score also qualifies a teen for a scholarship.</p></article>
-            <article class="skill-card" style="--k:var(--k-body)"><h4><i></i>Body</h4><p>Physical prowess: helps win fights, stay on the dance sphere (Nightlife), and may ease morning sickness during pregnancy.</p><p class="maxed"><b>Maxed (10/10):</b> The edge in every fight and a must for Athletic, Military and Law Enforcement. With University, 8 points already earn a teen the Hogan Scholarship for Athletics.</p></article>
+            <article class="skill-card" style="--k:var(--k-charisma)"><h4><i></i>Charisma</h4><p>Makes social interactions like jokes land more often and cuts the chance of being rejected.</p><p class="maxed"><b>Maxed (10/10):</b> Smoother socializing and the top of social careers like Politics, Business and Show Business. With University, 8 points earn a teen the §750 Bain-Gordon Communication Fellowship.</p></article>
+            <article class="skill-card" style="--k:var(--k-body)"><h4><i></i>Body</h4><p>Physical prowess: helps win fights, stay on the dance sphere (Nightlife), and may ease morning sickness during pregnancy.</p><p class="maxed"><b>Maxed (10/10):</b> The edge in every fight and a must for Athletic, Military and Law Enforcement. With University, 8 points already earn a teen the §750 Hogan Award for Athletics.</p></article>
             <article class="skill-card" style="--k:var(--k-logic)"><h4><i></i>Logic</h4><p>Wins chess games and drives promotions in Science, Medicine, Law Enforcement and more.</p><p class="maxed"><b>Maxed (10/10):</b> The best perk of all: at 10, a Sim learns every other skill except Body and Charisma 35% faster. With University, 8 points earn the §750 Will Wright Genius Grant.</p></article>
             <article class="skill-card" style="--k:var(--k-creativity)"><h4><i></i>Creativity</h4><p>Instruments sound better and earn bigger tips. At 5 the easel unlocks real painting, including custom paintings with Pets.</p><p class="maxed"><b>Maxed (10/10):</b> Masterpieces that sell for over §500 and bestselling novels written on the computer: a real income from home.</p></article>
             <article class="skill-card" style="--k:var(--k-cleaning)"><h4><i></i>Cleaning</h4><p>Cleans dirty objects and mops puddles faster. It comes most easily to neat Sims.</p><p class="maxed"><b>Maxed (10/10):</b> Chores take a fraction of the time, freeing hours for needs and wants. With University, 8 points earn the §750 Kim Metro Prize for Hygienics.</p></article>
@@ -1238,6 +1243,31 @@ button.ft-node:hover { background: rgba(255,255,255,.26); }
         <div class="note-row">
           <div class="well"><span class="label">Declare early</span><p class="small" style="margin-top:6px">Declare by phone or computer before junior year; Sims won't do it on their own. Anyone still undeclared after sophomore year lands in Philosophy. The "declare a major" want is worth 2,500 points.</p></div>
           <div class="well"><span class="label">Degree perks</span><p class="small" style="margin-top:6px">Graduates unlock Artist, Natural Scientist, Paranormal and Show Business, and can be hired as high as level 9 from the computer.</p></div>
+        </div>
+        <div class="well scholarships" id="scholarships">
+          <h3>Scholarships</h3>
+          <p class="small mute">Teens apply by phone or computer before leaving for college. Every freshman arrives with §500, and each scholarship won adds to it. A Sim can win as many as they qualify for, so a teen with 8 points in all seven skills, an A, a level 3 job and a past alien abduction starts college with §9,000. College has no tuition, so this is spending money for the first semester.</p>
+          <div class="scroll-x">
+            <table class="data scholar-table">
+              <thead><tr><th>Scholarship</th><th>What the teen needs</th><th>Award</th></tr></thead>
+              <tbody>
+                <tr><td class="name">Hogan Award for Athletics</td><td><span class="sk" style="--k:var(--k-body)"><i></i>Body <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Bain-Gordon Communication Fellowship</td><td><span class="sk" style="--k:var(--k-charisma)"><i></i>Charisma <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Kim Metro Prize for Hygienics</td><td><span class="sk" style="--k:var(--k-cleaning)"><i></i>Cleaning <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">London Culinary Arts Scholarship</td><td><span class="sk" style="--k:var(--k-cooking)"><i></i>Cooking <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Will Wright Genius Grant</td><td><span class="sk" style="--k:var(--k-logic)"><i></i>Logic <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Bui Engineering Award</td><td><span class="sk" style="--k:var(--k-mechanical)"><i></i>Mechanical <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Quigley Visual Arts Grant</td><td><span class="sk" style="--k:var(--k-creativity)"><i></i>Creativity <b>8</b></span></td><td class="n">§750</td></tr>
+                <tr><td class="name">Young Entrepreneurs Award</td><td>Teen part-time job at level 3</td><td class="n">§750</td></tr>
+                <tr><td class="name">SimCity Scholar's Grant</td><td>A- or better report card at high school</td><td class="n">§1,000</td></tr>
+                <tr><td class="name">Phelps-Wilsonoff Billiards Prize</td><td>High hidden pool skill (both trick shots unlocked)</td><td class="n">§1,000</td></tr>
+                <tr><td class="name">Tsang Footwork Award</td><td>High hidden dancing skill (<i>Bust a Move</i> unlocked; the FreeTime ballet barre helps)</td><td class="n">§1,000</td></tr>
+                <tr><td class="name">Undead Educational Scholarship</td><td>Teen is a zombie or a vampire</td><td class="n">§1,500</td></tr>
+                <tr><td class="name">Orphaned Sims Assistance Fund</td><td>Teen has no living parents</td><td class="n">§1,500</td></tr>
+                <tr><td class="name">Extraterrestrial Reparation Grant</td><td>Teen has been abducted by aliens</td><td class="n">§1,500</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
