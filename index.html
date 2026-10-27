@@ -15,6 +15,11 @@
 .skill-card .maxed b { color: var(--ylw); }
 .skill-every { margin: 12px 0 0; padding-left: 18px; font-size: 12px; color: var(--ink-soft); }
 .skill-every li { margin: 3px 0; }
+
+/* ---------- life skills guide ---------- */
+.life-guide { margin-top: 14px; }
+.life-guide .skill-card h4 em { margin-left: auto; font-style: normal; font-size: 9.5px; font-weight: 700; letter-spacing: .05em; padding: 1px 7px; border-radius: 99px; background: var(--aqua-3); color: var(--aqua-ink); }
+.life-guide .tip { margin: 0; font-size: 11.5px; color: var(--ink-dim); }
 </style>
 </head>
 <body>
@@ -1033,7 +1038,7 @@ button.ft-node:hover { background: rgba(255,255,255,.26); }
               <span class="label">Talent badges</span>
               <div class="chips"><span class="chip">Sales<em>OFB</em></span><span class="chip">Restocking<em>OFB</em></span><span class="chip">Cash Register<em>OFB</em></span><span class="chip">Robotics<em>OFB</em></span><span class="chip">Toy Making<em>OFB</em></span><span class="chip">Flower Arranging<em>OFB</em></span><span class="chip">Cosmetology<em>OFB</em></span><span class="chip">Gardening<em>SNS</em></span><span class="chip">Fishing<em>SNS</em></span><span class="chip">Pottery<em>FT</em></span><span class="chip">Sewing<em>FT</em></span></div>
               <div style="height:8px"></div>
-              <span class="label">Life skills · Apartment Life</span>
+              <span class="label"><a href="#lifeSkillGuide" style="color:inherit">Life skills · Apartment Life</a></span>
               <div class="chips"><span class="chip">Fire Prevention</span><span class="chip">Anger Management</span><span class="chip">Lifelong Happiness</span><span class="chip">Physiology</span><span class="chip">Couple Counseling</span><span class="chip">Parenting<em>FT</em></span></div>
             </div>
           </div>
@@ -1069,6 +1074,18 @@ button.ft-node:hover { background: rgba(255,255,255,.26); }
             <li>The top levels of every career ask for several high skills, so maxed skills are what get Sims to their lifetime-want jobs.</li>
             <li>Maxing all seven at once is a lifetime want of its own, and one of the hardest in the game.</li>
           </ul>
+        </div>
+        <div class="well skill-guide life-guide" id="lifeSkillGuide">
+          <h3>Life skills: what each one teaches</h3>
+          <p class="small mute">Life skills came with FreeTime (Parenting) and Apartment Life (the other five). A Sim studies them from a bookcase, and unlike the 7 main skills they have no levels: a Sim either knows one or doesn't, and the matching want only counts once it's fully learned.</p>
+          <div class="skill-guide-grid">
+            <article class="skill-card" style="--k:#ff8ac2"><h4><i></i>Parenting<em>FT</em></h4><p>Lets a Sim <i>Check on</i> a baby: a thought bubble shows which need (hunger, bladder, energy...) the baby wants met, so no more guessing why it cries.</p><p class="tip">Family and Knowledge Sims often roll the want to learn it right after a baby arrives.</p></article>
+            <article class="skill-card" style="--k:#ff6b5b"><h4><i></i>Fire Prevention<em>AL</em></h4><p>Meant to make a Sim panic less when a fire starts, so you can send them to put it out or get away sooner.</p><p class="tip">Bugged in the shipped game: Sims with it panic just as long. Fan fire mods make it work.</p></article>
+            <article class="skill-card" style="--k:#ffb347"><h4><i></i>Anger Management<em>AL</em></h4><p>Lowers the chance of a Sim getting furious with someone. When they do get furious, it wears off faster and hurts the relationship less.</p><p class="tip">Handy for hot-tempered Sims (few nice points) and busy apartment buildings full of neighbors.</p></article>
+            <article class="skill-card" style="--k:#ffe066"><h4><i></i>Lifelong Happiness<em>AL</em></h4><p>The aspiration bar drains much more slowly, so a Sim stays in gold or platinum far longer between fulfilled wants.</p><p class="tip">Fewer drops into aspiration failure, and more time to spend points on reward objects.</p></article>
+            <article class="skill-card" style="--k:#6fe7ff"><h4><i></i>Physiology<em>AL</em></h4><p>Builds the Body skill faster, gains fitness faster and loses it more slowly, and drains Energy more slowly.</p><p class="tip">Bugged with Mansion &amp; Garden Stuff: Body (and the next skills practiced) can jump straight to max. Fix mods exist.</p></article>
+            <article class="skill-card" style="--k:#c29bff"><h4><i></i>Couples Counseling<em>AL</em></h4><p>Unlocks <i>Repair relationship with...</i>: the Sim talks two partners with a romantic problem back together.</p><p class="tip">Doesn't work on divorced couples, and a Sim can't fix a cheating mess they're part of.</p></article>
+          </div>
         </div>
       </section>
 
